@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    background-image: url(images-OurTeams/BackgroundLandingPage.jpg);
+    background-size: 1600px 800px;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    height: 85px;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar > h1 {
+    font-size: 32px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu a:hover {
+    border-bottom: 3px solid white;
+    transition: all .3s ease;
+}
+
+section .card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background: rgb(140, 0, 255);
+}
+
+section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.content {
+    position: absolute;
+    height: 85vh;
+    left: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.content2 {
+    position: absolute;
+    height: 85vh;
+    left: 41%;
+    display: flex;
+    align-items: center;
+}
+
+.content3 {
+    position: absolute;
+    height: 85vh;
+    left: 62%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    background: white;
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 280px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    background: rgb(140, 0, 255);
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+}
+
+.card .media-icons {
+    margin-top: 18px;
+}
+
+.card .media-icons i{
+    cursor: pointer;
+    color: black;
+}
+
+.card .name-noRegis-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name-noRegis-class .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.name-noRegis-class .noRegis {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.name-noRegis-class .class {
+    font-size: 15px;
+    font-weight: 500;
+}
